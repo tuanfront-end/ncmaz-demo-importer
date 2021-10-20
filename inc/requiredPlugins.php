@@ -1,6 +1,6 @@
 <?php
 
-require_once plugin_dir_path(__FILE__)  . '/inc/class-tgm-plugin-activation.php';
+require_once NCMAZ_IMPORTER_BASE_PATH  . 'inc/class-tgm-plugin-activation.php';
 
 add_action('tgmpa_register', 'ncmaz_register_required_plugins');
 
@@ -61,28 +61,28 @@ function ncmaz_register_required_plugins()
 		[
 			'name'     => 'Ncmaz Core',
 			'slug'     => 'ncmaz-core',
-			'source'   => plugin_dir_path(__FILE__) . '/bundled-plugins/ncmaz-core.zip',
+			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-core.zip',
 			'required' => true,
 			'version'	 => '0.1.0',
 		],
 		[
 			'name'     => 'Ncmaz Frontend',
 			'slug'     => 'ncmaz-frontend',
-			'source'   => plugin_dir_path(__FILE__) . '/bundled-plugins/ncmaz-frontend.zip',
+			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-frontend.zip',
 			'required' => true,
 			'version'	=> '0.1.0',
 		],
 		[
 			'name'     => 'Total counts for wp graphql',
 			'slug'     => 'total-counts-for-wp-graphql',
-			'source'   => plugin_dir_path(__FILE__) . '/bundled-plugins/total-counts-for-wp-graphql.zip',
+			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/total-counts-for-wp-graphql.zip',
 			'required' => true,
 			'version'            => '0.0.2',
 		],
 		[
 			'name'     => 'Wp graphql acf',
 			'slug'     => 'wp-graphql-acf',
-			'source'   => plugin_dir_path(__FILE__) . '/bundled-plugins/wp-graphql-acf.zip',
+			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/wp-graphql-acf.zip',
 			'required' => true,
 			'version'            => '0.5.2',
 		],

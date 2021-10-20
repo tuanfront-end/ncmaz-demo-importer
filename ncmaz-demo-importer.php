@@ -13,6 +13,8 @@
  *
  */
 
+define('NCMAZ_IMPORTER_BASE_PATH', plugin_dir_path(__FILE__));
+
 //
 // DECLAER IMPORT DEMO THEME
 function ocdi_import_files()
@@ -21,16 +23,16 @@ function ocdi_import_files()
         [
             'import_file_name'             => 'Ncmaz Demo 1',
             'categories'                   => ['Category 1', 'Category 2'],
-            'local_import_file'            => plugin_dir_path(__FILE__) . '/ocdi-demos/demo1/ncmaz.xml',
-            'local_import_widget_file'     => plugin_dir_path(__FILE__) .  '/ocdi-demos/demo1/widgets.wie',
-            'local_import_customizer_file' => plugin_dir_path(__FILE__) . '/ocdi-demos/demo1/customize.dat',
+            'local_import_file'            => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/ncmaz.xml',
+            'local_import_widget_file'     => NCMAZ_IMPORTER_BASE_PATH .  '/ocdi-demos/demo1/widgets.wie',
+            'local_import_customizer_file' => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/customize.dat',
             'local_import_redux'           => [
                 [
-                    'file_path'   => plugin_dir_path(__FILE__) . '/ocdi-demos/demo1/redux.json',
+                    'file_path'   => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/redux.json',
                     'option_name' => 'ncmaz_redux_demo',
                 ],
             ],
-            'import_preview_image_url'     =>  plugin_dir_path(__FILE__) . '/ocdi-demos/demo1/preview.jpeg',
+            'import_preview_image_url'     =>  NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/preview.jpeg',
             'preview_url'                  => 'https://ncmaz.chisnghiax.com/',
         ],
     ];
@@ -60,6 +62,6 @@ add_action('ocdi/after_import', 'ocdi_after_import_setup');
 
 // 
 // 
-require plugin_dir_path(__FILE__) . 'inc/requiredPlugins.php';
+require NCMAZ_IMPORTER_BASE_PATH . 'inc/requiredPlugins.php';
 // 
 // 
