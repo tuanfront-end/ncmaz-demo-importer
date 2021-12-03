@@ -15,22 +15,28 @@ function ncmaz_register_required_plugins()
 			'version'            => '5.10.2',
 		],
 		[
+			'name'     => 'WP User Frontend',
+			'slug'     => 'wp-user-frontend', // Plugin slug - the same as on WordPress.org plugin repository.
+			'required' => true,
+			'version'            => '3.5.22',
+		],
+		[
 			'name'     => 'favorites',
 			'slug'     => 'favorites',
 			'required' => true,
 			'version'            => '2.3.2',
 		],
 		[
-			'name'     => 'mailpoet',
-			'slug'     => 'mailpoet',
+			'name'     => 'Email Subscribers & Newsletters',
+			'slug'     => 'email-subscribers',
 			'required' => true,
-			'version'            => '3.71.0',
+			'version'  => '4.8.5',
 		],
 		[
 			'name'     => 'Nextend Facebook Connect',
 			'slug'     => 'nextend-facebook-connect',
 			'required' => true,
-			'version'            => '3.1.1',
+			'version'	=> '3.1.1',
 		],
 		[
 			'name'     => 'Reading Time Wp',
@@ -53,7 +59,7 @@ function ncmaz_register_required_plugins()
 		[
 			'name'     => 'One click demo import',
 			'slug'     => 'one-click-demo-import',
-			'required' => true,
+			'required' => false,
 			'version'	=> '3.0.2',
 		],
 
@@ -63,14 +69,14 @@ function ncmaz_register_required_plugins()
 			'slug'     => 'ncmaz-core',
 			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-core.zip',
 			'required' => true,
-			'version'	 => '0.1.0',
+			'version'	 => '0.1.1',
 		],
 		[
 			'name'     => 'Ncmaz Frontend',
 			'slug'     => 'ncmaz-frontend',
 			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-frontend.zip',
 			'required' => true,
-			'version'	=> '0.1.0',
+			'version'	=> '0.1.1',
 		],
 		[
 			'name'     => 'Total counts for wp graphql',
