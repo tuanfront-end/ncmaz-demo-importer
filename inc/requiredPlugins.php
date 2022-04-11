@@ -69,14 +69,14 @@ function ncmaz_register_required_plugins()
 			'slug'     => 'ncmaz-core',
 			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-core.zip',
 			'required' => true,
-			'version'	 => '0.1.1',
+			'version'	 => '1.1.0',
 		],
 		[
 			'name'     => 'Ncmaz Frontend',
 			'slug'     => 'ncmaz-frontend',
 			'source'   => NCMAZ_IMPORTER_BASE_PATH . '/bundled-plugins/ncmaz-frontend.zip',
 			'required' => true,
-			'version'	=> '0.1.1',
+			'version'	=> '1.1.0',
 		],
 		[
 			'name'     => 'Total counts for wp graphql',

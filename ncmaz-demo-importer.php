@@ -5,7 +5,7 @@
  * Description:       Example block written with ESNext standard and JSX support – build step required.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           0.1.2
+ * Version:           1.1.0
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,7 +22,7 @@ function ocdi_import_files()
     return [
         [
             'import_file_name'             => 'Ncmaz Demo 1',
-            'categories'                   => ['Category 1', 'Category 2'],
+            'categories'                   => ['Demo 1'],
             'local_import_file'            => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/ncmaz.xml',
             'local_import_widget_file'     => NCMAZ_IMPORTER_BASE_PATH .  '/ocdi-demos/demo1/widgets.wie',
             'local_import_customizer_file' => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/customize.dat',
@@ -32,7 +32,22 @@ function ocdi_import_files()
                     'option_name' => 'ncmaz_redux_demo',
                 ],
             ],
-            'import_preview_image_url'     =>  NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1/preview.jpeg',
+            'import_preview_image_url'     =>  'https://chisnghiax.com/__TF__DESC__IMGS/1_ncmaz/12.png',
+            'preview_url'                  => 'https://ncmaz.chisnghiax.com/',
+        ],
+        [
+            'import_file_name'             => 'Ncmaz Demo 1 - No Data',
+            'categories'                   => ['Demo 1'],
+            'local_import_file'            => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1-no-data/ncmaz.xml',
+            'local_import_widget_file'     => NCMAZ_IMPORTER_BASE_PATH .  '/ocdi-demos/demo1-no-data/widgets.wie',
+            'local_import_customizer_file' => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1-no-data/customize.dat',
+            'local_import_redux'           => [
+                [
+                    'file_path'   => NCMAZ_IMPORTER_BASE_PATH . '/ocdi-demos/demo1-no-data/redux.json',
+                    'option_name' => 'ncmaz_redux_demo',
+                ],
+            ],
+            'import_preview_image_url'     =>  'https://chisnghiax.com/__TF__DESC__IMGS/1_ncmaz/12.png',
             'preview_url'                  => 'https://ncmaz.chisnghiax.com/',
         ],
     ];
